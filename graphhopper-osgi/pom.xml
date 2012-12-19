@@ -6,7 +6,7 @@
         <groupId>org.orbisgis</groupId>
         <version>1.0</version>
     </parent>
-    <groupId>org.orbisgis</groupId>
+    <groupId>com.graphhopper</groupId>
     <artifactId>graphhopper-osgi</artifactId>
     <name>graphhopper-osgi</name>
     <version>0.1-SNAPSHOT</version>
