@@ -30,7 +30,7 @@
                     <instructions>
                         <!--<Export-Package>com.graphhopper.*</Export-Package>-->
                         <Import-Package>!com.sun.*,*</Import-Package>
-                        <Embed-Dependency>*;scope=compile;inline=true</Embed-Dependency>
+                        <Embed-Dependency>graphhopper;scope=compile;inline=true</Embed-Dependency>
                         <Embed-Transitive>true</Embed-Transitive>
                         <_exportcontents>com.graphhopper,com.graphhopper.*</_exportcontents>
                     </instructions>
