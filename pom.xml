@@ -18,7 +18,8 @@
         <module>jfreechart</module>
         <module>servlet-api</module>
         <module>jts-osgi</module>
-    </modules>
+    <module>postgresql-osgi</module>
+  </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <netbeans.hint.license>OrbisGIS</netbeans.hint.license>
