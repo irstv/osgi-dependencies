@@ -21,7 +21,11 @@
         <module>postgresql-osgi</module>
         <module>renjin-script-engine-osgi</module>
         <module>commons-vfs2-osgi</module>
+        <module>netlib-util-osgi</module>
         <module>netlib-all-osgi</module>
+        <module>jniloader-osgi</module>
+
+        <module>osgi-dependencies-test</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

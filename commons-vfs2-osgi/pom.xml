@@ -2,10 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>orbisgis</artifactId>
+        <artifactId>osgi-dependencies</artifactId>
         <groupId>org.orbisgis</groupId>
-        <version>5.1.0-SNAPSHOT</version>
-        <relativePath>../..</relativePath>
+        <version>1.0</version>
     </parent>
     <artifactId>commons-vfs2-osgi</artifactId>
     <name>commons-vfs2</name>
@@ -20,9 +19,33 @@
                 <configuration>
                     <unpackBundle>true</unpackBundle>
                     <instructions>
-                        <Embed-Dependency>commons-vfs2;scope=compile;inline=true</Embed-Dependency>
+                        <Embed-Dependency>
+                            commons-vfs2;scope=compile;inline=true,
+                            jsch;scope=compile;inline=true,
+                            jzlib;scope=compile;inline=true,
+                            commons-collections;scope=compile;inline=true,
+                            commons-httpclient;scope=compile;inline=true,
+                            commons-codec;scope=compile;inline=true,
+                            jackrabbit-webdav;scope=compile;inline=true,
+                            ant;scope=compile;inline=true
+                        </Embed-Dependency>
                         <Embed-Transitive>true</Embed-Transitive>
-                        <_exportcontents>org.apache.commons.*</_exportcontents>
+                        <Import-Package>
+                            !kaffe.rmi.rmic.*,
+                            !sun.rmi.rmic.*,
+                            !sun.misc.*,
+                            !sun.tools.*,
+                            !org.apache.env.*,
+                            !org.apache.bcel.*,
+                            !org.apache.bsf.*,
+                            !org.apache.tools.*,
+                            !org.apache.xml.*,
+                            !com.sun.tools.*,
+                            !org.apache.jackrabbit.*,
+                            !org.apache.commons.net.ftp.*,
+                            *
+                        </Import-Package>
+                        <_exportcontents>org.apache.commons.vfs2.*</_exportcontents>
                     </instructions>
                 </configuration>
             </plugin>
@@ -36,6 +59,46 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-vfs2</artifactId>
             <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.42</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jzlib</artifactId>
+            <version>1.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>jackrabbit-webdav</artifactId>
+            <version>1.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>ant</groupId>
+            <artifactId>ant</artifactId>
+            <version>1.6.2</version>
         </dependency>
     </dependencies>
 </project>

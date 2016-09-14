@@ -2,10 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>orbisgis</artifactId>
+        <artifactId>osgi-dependencies</artifactId>
         <groupId>org.orbisgis</groupId>
-        <version>5.1.0-SNAPSHOT</version>
-        <relativePath>../..</relativePath>
+        <version>1.0</version>
     </parent>
     <artifactId>netlib-all-osgi</artifactId>
     <name>netlib-all</name>
@@ -21,6 +20,7 @@
                     <unpackBundle>true</unpackBundle>
                     <instructions>
                         <Embed-Dependency>
+                            all;scope=compile;inline=true,
                             core;scope=compile;inline=true,
                             netlib-native_ref-osx-x86_64;scope=compile;inline=true,
                             netlib-native_ref-linux-x86_64;scope=compile;inline=true,
@@ -33,10 +33,18 @@
                             netlib-native_system-linux-i686;scope=compile;inline=true,
                             netlib-native_system-linux-armhf;scope=compile;inline=true,
                             netlib-native_system-win-x86_64;scope=compile;inline=true,
-                            netlib-native_system-win-i686;scope=compile;inline=true
+                            netlib-native_system-win-i686;scope=compile;inline=true,
+                            arpack_combined_all;scope=compile;inline=true,
+                            lapack;scope=compile;inline=true,
+                            blas;scope=compile;inline=true,
+                            f2jutil;scope=compile;inline=true,
+                            xerbla;scope=compile;inline=true
                         </Embed-Dependency>
                         <Embed-Transitive>true</Embed-Transitive>
-                        <_exportcontents>com.github.fommil.netlib,com.github.fommil.netlib.*</_exportcontents>
+                        <_exportcontents>
+                            com.github.fommil.netlib,
+                            com.github.fommil.netlib.*
+                        </_exportcontents>
                     </instructions>
                 </configuration>
             </plugin>
@@ -50,6 +58,31 @@
             <groupId>com.github.fommil.netlib</groupId>
             <artifactId>core</artifactId>
             <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.f2j</groupId>
+            <artifactId>arpack_combined_all</artifactId>
+            <version>0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netlib</groupId>
+            <artifactId>lapack</artifactId>
+            <version>0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netlib</groupId>
+            <artifactId>f2jutil</artifactId>
+            <version>0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netlib</groupId>
+            <artifactId>blas</artifactId>
+            <version>0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netlib</groupId>
+            <artifactId>xerbla</artifactId>
+            <version>0.8</version>
         </dependency>
         <dependency>
             <groupId>com.github.fommil.netlib</groupId>
