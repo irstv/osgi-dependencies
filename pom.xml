@@ -19,11 +19,56 @@
         <module>jts-osgi</module>
         <module>weka-osgi</module>
         <module>postgresql-osgi</module>
-        <module>renjin-script-engine-osgi</module>
         <module>commons-vfs2-osgi</module>
         <module>netlib-util-osgi</module>
         <module>netlib-all-osgi</module>
         <module>jniloader-osgi</module>
+        <module>aether/aether-api-osgi</module>
+        <module>aether/aether-spi-osgi</module>
+        <module>aether/aether-connector-basic-osgi</module>
+        <module>aether/aether-util-osgi</module>
+        <module>aether/aether-impl-osgi</module>
+        <module>javax.inject-osgi</module>
+        <module>org.eclipse.sisu.inject-osgi</module>
+        <module>org.eclipse.sisu.plexus-osgi</module>
+        <module>sisu-guice-osgi</module>
+        <module>sisu-guava-osgi</module>
+        <module>aether/aether-transport-file-osgi</module>
+        <module>aether/aether-transport-http-osgi</module>
+        <module>httpclient-osgi</module>
+        <module>httpcore-osgi</module>
+        <module>commons-codec-osgi</module>
+        <module>codemodel-osgi</module>
+        <module>commons-compress-osgi</module>
+        <module>commons-logging-osgi</module>
+        <module>xz-osgi</module>
+        <module>commons-math-osgi</module>
+        <module>joda-time-osgi</module>
+        <module>joda-convert-osgi</module>
+        <module>renjin-osgi</module>
+        <module>maven/maven-repository-metadata-osgi</module>
+        <module>maven/maven-aether-provider-osgi</module>
+        <module>maven/maven-model-osgi</module>
+        <module>maven/maven-settings-builder-osgi</module>
+        <module>maven/maven-settings-osgi</module>
+        <module>maven/maven-scm-api-osgi</module>
+        <module>maven/maven-scm-provider-svnexe-osgi</module>
+        <module>maven/maven-scm-provider-svn-commons-osgi</module>
+        <module>plexus/plexus-utils-osgi</module>
+        <module>plexus/plexus-cipher-osgi</module>
+        <module>plexus/plexus-classworlds-osgi</module>
+        <module>plexus/plexus-component-annotations-osgi</module>
+        <module>plexus/plexus-interpolation-osgi</module>
+        <module>plexus/plexus-sec-dispatcher-osgi</module>
+        <module>airline-osgi</module>
+        <module>aopalliance-osgi</module>
+        <module>guava-osgi</module>
+        <module>regexp-osgi</module>
+        <module>asm-osgi</module>
+        <module>cdi-api-osgi</module>
+        <module>jackson-annotations-osgi</module>
+        <module>jackson-core-osgi</module>
+        <module>jackson-databind-osgi</module>
 
         <module>osgi-dependencies-test</module>
     </modules>
