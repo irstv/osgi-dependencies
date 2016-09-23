@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>osgi-dependencies</artifactId>
+        <groupId>org.orbisgis</groupId>
+        <version>1.0</version>
+    </parent>
+    <artifactId>cdi-api-osgi</artifactId>
+    <name>cdi-api</name>
+    <packaging>bundle</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>2.3.7</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <unpackBundle>true</unpackBundle>
+                    <instructions>
+                        <Embed-Dependency>
+                            cdi-api;scope=compile;inline=true
+                        </Embed-Dependency>
+                        <Embed-Transitive>true</Embed-Transitive>
+                        <_exportcontents>javax.enterprise,javax.enterprise.*</_exportcontents>
+                        <Import-Package>!javax.interceptor,!javax.el,!org.jboss.ejb3,!org.jboss.interceptor,*</Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+</project>

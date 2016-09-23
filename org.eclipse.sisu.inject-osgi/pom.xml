@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>osgi-dependencies</artifactId>
+        <groupId>org.orbisgis</groupId>
+        <version>1.0</version>
+    </parent>
+    <artifactId>org.eclipse.sisu.inject-osgi</artifactId>
+    <name>org.eclipse.sisu.inject</name>
+    <packaging>bundle</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>2.3.7</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <unpackBundle>true</unpackBundle>
+                    <instructions>
+                        <Embed-Dependency>
+                            org.eclipse.sisu.inject;scope=compile;inline=true
+                        </Embed-Dependency>
+                        <Embed-Transitive>true</Embed-Transitive>
+                        <_exportcontents>org.eclipse.sisu,org.eclipse.sisu.*</_exportcontents>
+                        <Import-Package>!org.testng.annotations,!junit.*,!org.junit,*</Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.sisu</groupId>
+            <artifactId>org.eclipse.sisu.inject</artifactId>
+            <version>0.0.0.M2a</version>
+        </dependency>
+    </dependencies>
+</project>
