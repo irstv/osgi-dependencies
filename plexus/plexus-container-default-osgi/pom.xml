@@ -5,6 +5,7 @@
         <artifactId>osgi-dependencies</artifactId>
         <groupId>org.orbisgis</groupId>
         <version>1.0</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
     <artifactId>plexus-container-default-osgi</artifactId>
     <name>plexus-container-default</name>

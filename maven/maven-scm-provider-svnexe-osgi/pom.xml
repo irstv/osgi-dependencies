@@ -5,6 +5,7 @@
         <artifactId>osgi-dependencies</artifactId>
         <groupId>org.orbisgis</groupId>
         <version>1.0</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
     <artifactId>maven-scm-provider-svnexe-osgi</artifactId>
     <name>maven-scm-provider-svnexe</name>
