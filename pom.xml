@@ -17,7 +17,6 @@
         <module>jfreechart</module>
         <module>servlet-api</module>
         <module>jts-osgi</module>
-        <module>weka-osgi</module>
         <module>postgresql-osgi</module>
         <module>commons-vfs2-osgi</module>
         <module>netlib-util-osgi</module>
@@ -39,8 +38,6 @@
         <module>httpcore-osgi</module>
         <module>commons-codec-osgi</module>
         <module>codemodel-osgi</module>
-        <module>commons-compress-osgi</module>
-        <module>commons-logging-osgi</module>
         <module>xz-osgi</module>
         <module>commons-math-osgi</module>
         <module>joda-time-osgi</module>
@@ -51,24 +48,16 @@
         <module>maven/maven-model-osgi</module>
         <module>maven/maven-settings-builder-osgi</module>
         <module>maven/maven-settings-osgi</module>
-        <module>maven/maven-scm-api-osgi</module>
-        <module>maven/maven-scm-provider-svnexe-osgi</module>
-        <module>maven/maven-scm-provider-svn-commons-osgi</module>
         <module>plexus/plexus-utils-osgi</module>
         <module>plexus/plexus-cipher-osgi</module>
         <module>plexus/plexus-classworlds-osgi</module>
         <module>plexus/plexus-component-annotations-osgi</module>
         <module>plexus/plexus-interpolation-osgi</module>
         <module>plexus/plexus-sec-dispatcher-osgi</module>
-        <module>airline-osgi</module>
-        <module>aopalliance-osgi</module>
         <module>guava-osgi</module>
         <module>regexp-osgi</module>
         <module>asm-osgi</module>
         <module>cdi-api-osgi</module>
-        <module>jackson-annotations-osgi</module>
-        <module>jackson-core-osgi</module>
-        <module>jackson-databind-osgi</module>
 
         <module>osgi-dependencies-test</module>
     </modules>
