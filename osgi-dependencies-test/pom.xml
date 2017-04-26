@@ -35,7 +35,6 @@
                                 <resource> <directory>../postgresql-osgi/target</directory> </resource>
                                 <resource> <directory>../servlet-api/target</directory> </resource>
                                 <resource> <directory>../trove-osgi/target</directory> </resource>
-                                <resource> <directory>../weka-osgi/target</directory> </resource>
                                 <resource> <directory>../aether/aether-api-osgi/target</directory> </resource>
                                 <resource> <directory>../aether/aether-spi-osgi/target</directory> </resource>
                                 <resource> <directory>../aether/aether-connector-basic-osgi/target</directory> </resource>
@@ -53,10 +52,8 @@
                                 <resource> <directory>../commons-codec-osgi/target</directory> </resource>
                                 <resource> <directory>../renjin-osgi/target</directory> </resource>
                                 <resource> <directory>../codemodel-osgi/target</directory> </resource>
-                                <resource> <directory>../commons-compress-osgi/target</directory> </resource>
                                 <resource> <directory>../xz-osgi/target</directory> </resource>
                                 <resource> <directory>../commons-math-osgi/target</directory> </resource>
-                                <resource> <directory>../commons-logging-osgi/target</directory> </resource>
                                 <resource> <directory>../joda-time-osgi/target</directory> </resource>
                                 <resource> <directory>../joda-convert-osgi/target</directory> </resource>
                                 <resource> <directory>../maven/maven-repository-metadata-osgi/target</directory> </resource>
@@ -64,24 +61,16 @@
                                 <resource> <directory>../maven/maven-model-osgi/target</directory> </resource>
                                 <resource> <directory>../maven/maven-settings-osgi/target</directory> </resource>
                                 <resource> <directory>../maven/maven-settings-builder-osgi/target</directory> </resource>
-                                <resource> <directory>../maven/maven-scm-api-osgi/target</directory> </resource>
-                                <resource> <directory>../maven/maven-scm-provider-svnexe-osgi/target</directory> </resource>
-                                <resource> <directory>../maven/maven-scm-provider-svn-commons-osgi/target</directory> </resource>
                                 <resource> <directory>../plexus/plexus-utils-osgi/target</directory> </resource>
                                 <resource> <directory>../plexus/plexus-cipher-osgi/target</directory> </resource>
                                 <resource> <directory>../plexus/plexus-classworlds-osgi/target</directory> </resource>
                                 <resource> <directory>../plexus/plexus-component-annotations-osgi/target</directory> </resource>
                                 <resource> <directory>../plexus/plexus-interpolation-osgi/target</directory> </resource>
                                 <resource> <directory>../plexus/plexus-sec-dispatcher-osgi/target</directory> </resource>
-                                <resource> <directory>../airline-osgi/target</directory> </resource>
-                                <resource> <directory>../aopalliance-osgi/target</directory> </resource>
                                 <resource> <directory>../guava-osgi/target</directory> </resource>
                                 <resource> <directory>../regexp-osgi/target</directory> </resource>
                                 <resource> <directory>../asm-osgi/target</directory> </resource>
                                 <resource> <directory>../cdi-api-osgi/target</directory> </resource>
-                                <resource> <directory>../jackson-annotations-osgi/target</directory> </resource>
-                                <resource> <directory>../jackson-core-osgi/target</directory> </resource>
-                                <resource> <directory>../jackson-databind-osgi/target</directory> </resource>
                             </resources>
                         </configuration>
                     </execution>
