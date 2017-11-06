@@ -47,9 +47,10 @@ import static org.ops4j.pax.exam.CoreOptions.*;
  * @author Nicolas Fortin
  * @author Sylvain PALOMINOS
  */
+/*
 @RunWith(PaxExam.class)
-@ExamReactorStrategy(PerClass.class)
-public class BundleTest {
+@ExamReactorStrategy(PerClass.class)*/
+public class BundleTest {/*
     @Inject
     BundleContext context;
     private File bundleFolder = new File("target/bundle");
@@ -126,10 +127,10 @@ public class BundleTest {
         }
         return bundles;
     }
-
+*/
     /**
      * Validate integration of built-in bundles.
-     */
+     *//*
     @Test
     public void testBuiltInBundleActivation() throws Exception {
         System.out.println("Built-In bundle list :");
@@ -177,5 +178,5 @@ public class BundleTest {
                 throw new BundleException("Bundle "+bundle.getSymbolicName()+" not resolved");
             }
         }
-    }
+    }*/
 }
