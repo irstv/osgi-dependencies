@@ -8,6 +8,7 @@
     </parent>
     <artifactId>renjin-osgi</artifactId>
     <name>renjin</name>
+    <version>0.8.2515</version>
     <packaging>bundle</packaging>
     <build>
         <plugins>
@@ -76,7 +77,7 @@
     </build>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <renjin-version>0.8.2356</renjin-version>
+        <renjin-version>0.8.2515</renjin-version>
     </properties>
     <dependencies>
         <dependency>
